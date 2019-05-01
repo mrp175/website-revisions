@@ -915,13 +915,24 @@ main {
   object-fit: cover;
 }
 
+
+  /*------- IMAGE CAROUSEL END --------*/
+
+  /*-------- MEDIA QUERIES START -------*/
+
+  @media only screen and (max-width: 750px) {
+  body {
+  }
+}
+
 @media(max-width: 512px) {
   #carousel-image {
   height: 268px;
   padding-top: 0%;
 }
 
-  /*------- IMAGE CAROUSEL END --------*/
+
+  /*-------- MEDIA QUERIES END --------*/
   
   /* icons - https://postimg.cc/gallery/1y95qh6i6/ 
   https://postimg.cc/gallery/1g60e1oj6/
