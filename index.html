@@ -25,7 +25,7 @@
           <div class="nav-empty-sides"></div>
           <div class="nav-logo"> <div class=text-outline> Ptolemy Powlesland </div> </div>
           <div class="nav-empty"></div>
-          <div class="nav-button"> <button class="nvbtn" onclick="aboutFadeUp()"> HOME </button> </div>
+          <div class="nav-button"> <button class="nvbtn" onclick="homeFadeUp()"> HOME </button> </div>
           <div class="nav-button"> <button class="nvbtn"> ABOUT ME </button> </div>
           <div class="nav-button"> <button class="nvbtn"> GOALS </button> </div>
           <div class="nav-button"> <button class="nvbtn"> PROJECTS </button> </div>
@@ -52,7 +52,7 @@
       <!---------------- HOME start --------------->
 
 
-      <div class="card-wrapper">
+      <div class="card-wrapper" id="home">
         <div class="card-large-main">
           <div class="card-large-img">
             <img class="card-img-fit" src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
@@ -87,7 +87,7 @@
 
     <!------------- ABOUT ME start -------------->
 
-    <div class="card-wrapper">
+    <div class="card-wrapper" id="about">
       <div class="card-large-main">
         <div class="card-large-img">
           <img class="card-img-fit" src="https://i.postimg.cc/R9tQ6snK/profile-red-saturation-2-noise-3-sharpening.jpg">
@@ -117,7 +117,7 @@
 
     <!--------------- GOALS start --------------->
 
-    <div class="card-wrapper">
+    <div class="card-wrapper" id="goals">
       <div class="card-large-main">
         <div class="card-large-img">
           <img class="card-img-fit" src="https://i.postimg.cc/Gct8GQqk/profile-pic-2-saturation-and-colour-corrected-2.jpg">
@@ -170,7 +170,7 @@
 
    <!--------------- PROJECTS start ------------>   
 
-   <div class="projects-keep-ratio-container">
+   <div class="projects-keep-ratio-container" id="projects">
     <div class="projects-keep-ratio">
 
       <div id="projects-container">
@@ -222,7 +222,7 @@
  <!----------PROJECTS END -------->
 
  <!---------- MUSIC START -------->
- <div class="card-wrapper">
+ <div class="card-wrapper" id="music">
   <div class="card-large-main">
     <div class="card-large-img">
       <img class="card-img-fit" src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
@@ -258,9 +258,10 @@
 
 <!---------- CONTACT START -------->
 
+<div id="contact">
 <div id=contact-container>
   <h2> Contact Me </h2>
-  <p> Comments and Suggestions Welcome<p>
+  <p> Comments and Suggestions Welcome</p>
     <form id="contact-form">
       <input class="contact-textbox" type="text" name="name" placeholder="Your name" required>
       <input class="contact-textbox" type="text" name="email" placeholder="Your email address" required>
@@ -268,6 +269,7 @@
       <input class="contact-submit" type="submit" name="submit" value="Submit">
     </form>
   </div>
+</div>
 
 
 
