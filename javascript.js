@@ -232,3 +232,76 @@ function checked() {
 }
 
 /*------- IMAGE CAROUSEL END --------*/
+
+
+/*------- HOME START --------*/
+
+function homeFadeUp() {
+  document.getElementById("home").style.display = "block";
+}
+
+function homeFadeDown() {
+  document.getElementById("home").style.display = "none";
+}
+
+/*------- HOME END --------*/
+
+/*------- ABOUT ME START --------*/
+
+function welcomeFadeUp() {
+  document.getElementById("about").style.display = "block";
+}
+
+function welcomeFadeDown() {
+  document.getElementById("about").style.display = "none";
+}
+
+/*------- ABOUT ME END --------*/
+
+/*------- GOALS START --------*/
+
+function welcomeFadeUp() {
+  document.getElementById("goals").style.display = "block";
+}
+
+function welcomeFadeDown() {
+  document.getElementById("goals").style.display = "none";
+}
+
+/*------- GOALS END --------*/
+
+/*------- PROJECTS START --------*/
+
+function welcomeFadeUp() {
+  document.getElementById("projects").style.display = "block";
+}
+
+function welcomeFadeDown() {
+  document.getElementById("projects").style.display = "none";
+}
+
+/*------- PROJECTS END --------*/
+
+/*------- MUSIC START --------*/
+
+function welcomeFadeUp() {
+  document.getElementById("music").style.display = "block";
+}
+
+function welcomeFadeDown() {
+  document.getElementById("music").style.display = "none";
+}
+
+/*------- MUSIC END --------*/
+
+/*------- CONTACT START --------*/
+
+function welcomeFadeUp() {
+  document.getElementById("contact").style.display = "block";
+}
+
+function welcomeFadeDown() {
+  document.getElementById("contact").style.display = "none";
+}
+
+/*------- CONTACT END --------*/
