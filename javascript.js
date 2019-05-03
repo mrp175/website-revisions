@@ -3,7 +3,7 @@
 
 var opacity = 0;
 
-function aboutFadeUp() {
+function aboutFadeUxyz() {
   if (opacity < 100) {
     opacity += 8;
     setTimeout(function() {
@@ -22,7 +22,7 @@ function aboutFadeUp() {
   }
 }
 
-function aboutFadeDown() {
+function aboutFadeDownxyz() {
   if (opacity > 0) {
     opacity -= 8;
     setTimeout(function() {
@@ -89,7 +89,7 @@ function speakFadeDown() {
 
 /* Music */
 
-function musicFadeUp() {
+function musicFadeUpxyz() {
   if (opacity < 100) {
     opacity += 8;
     setTimeout(function() {
@@ -108,7 +108,7 @@ function musicFadeUp() {
   }
 }
 
-function musicFadeDown() {
+function musicFadeDownxyz() {
   if (opacity > 0) {
     opacity -= 8;
     setTimeout(function() {
@@ -248,11 +248,11 @@ function homeFadeDown() {
 
 /*------- ABOUT ME START --------*/
 
-function welcomeFadeUp() {
+function aboutFadeUp() {
   document.getElementById("about").style.display = "block";
 }
 
-function welcomeFadeDown() {
+function aboutFadeDown() {
   document.getElementById("about").style.display = "none";
 }
 
@@ -260,11 +260,11 @@ function welcomeFadeDown() {
 
 /*------- GOALS START --------*/
 
-function welcomeFadeUp() {
+function goalsFadeUp() {
   document.getElementById("goals").style.display = "block";
 }
 
-function welcomeFadeDown() {
+function goalsFadeDown() {
   document.getElementById("goals").style.display = "none";
 }
 
@@ -272,11 +272,11 @@ function welcomeFadeDown() {
 
 /*------- PROJECTS START --------*/
 
-function welcomeFadeUp() {
+function projectsFadeUp() {
   document.getElementById("projects").style.display = "block";
 }
 
-function welcomeFadeDown() {
+function projectsFadeDown() {
   document.getElementById("projects").style.display = "none";
 }
 
@@ -284,11 +284,11 @@ function welcomeFadeDown() {
 
 /*------- MUSIC START --------*/
 
-function welcomeFadeUp() {
+function musicFadeUp() {
   document.getElementById("music").style.display = "block";
 }
 
-function welcomeFadeDown() {
+function musicFadeDown() {
   document.getElementById("music").style.display = "none";
 }
 
@@ -296,12 +296,67 @@ function welcomeFadeDown() {
 
 /*------- CONTACT START --------*/
 
-function welcomeFadeUp() {
+function contactFadeUp() {
   document.getElementById("contact").style.display = "block";
 }
 
-function welcomeFadeDown() {
+function contactFadeDown() {
   document.getElementById("contact").style.display = "none";
 }
 
 /*------- CONTACT END --------*/
+
+
+function home() {
+  homeFadeUp();
+  aboutFadeDown();
+  goalsFadeDown();
+  projectsFadeDown();
+  musicFadeDown();
+  contactFadeDown();
+}
+
+function about() {
+  homeFadeDown();
+  aboutFadeUp();
+  goalsFadeDown();
+  projectsFadeDown();
+  musicFadeDown();
+  contactFadeDown();
+}
+
+function goals() {
+  homeFadeDown();
+  aboutFadeDown();
+  goalsFadeUp();
+  projectsFadeDown();
+  musicFadeDown();
+  contactFadeDown();
+}
+
+function projects() {
+  homeFadeDown();
+  aboutFadeDown();
+  goalsFadeDown();
+  projectsFadeUp();
+  musicFadeDown();
+  contactFadeDown();
+}
+
+function music() {
+  homeFadeDown();
+  aboutFadeDown();
+  goalsFadeDown();
+  projectsFadeDown();
+  musicFadeUp();
+  contactFadeDown();
+}
+
+function contact() {
+  homeFadeDown();
+  aboutFadeDown();
+  goalsFadeDown();
+  projectsFadeDown();
+  musicFadeDown();
+  contactFadeUp();
+}
