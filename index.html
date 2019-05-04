@@ -10,7 +10,7 @@
 <body id="no-scroll">
 
   <main>
-    <div>
+    <div id="total-wrapper">
       <div class="background-image">
         <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
       </div>
@@ -25,12 +25,12 @@
           <div class="nav-empty-sides"></div>
           <div class="nav-logo"> <div class=text-outline> Ptolemy Powlesland </div> </div>
           <div class="nav-empty"></div>
-          <div class="nav-button"> <button class="nvbtn" onclick="home()"> HOME </button> </div>
-          <div class="nav-button"> <button class="nvbtn" onclick="about()"> ABOUT ME </button> </div>
-          <div class="nav-button"> <button class="nvbtn" onclick="goals()"> GOALS </button> </div>
-          <div class="nav-button"> <button class="nvbtn" onclick="projects()"> PROJECTS </button> </div>
+          <div class="nav-button"> <button class="nvbtn" id="home-button" onclick="home()"> HOME </button> </div>
+          <div class="nav-button"> <button class="nvbtn" id="about-button" onclick="about()"> ABOUT ME </button> </div>
+          <div class="nav-button"> <button class="nvbtn" id="goals-button" onclick="goals()"> GOALS </button> </div>
+          <div class="nav-button"> <button class="nvbtn" id="projects-button" onclick="projects()"> PROJECTS </button> </div>
           <div class="nav-button"> <button class="nvbtn" id="music-button" onclick="music()"> MUSIC </button></div>
-          <div class="nav-button"> <button class="nvbtn" onclick="contact()"> CONTACT </button> </div>
+          <div class="nav-button"> <button class="nvbtn" id="contact-button" onclick="contact()"> CONTACT </button> </div>
           <div class="nav-empty-sides"></div>
         </div>
       </div>
@@ -258,6 +258,7 @@
 
 <!---------- CONTACT START -------->
 
+<div id="contact-overlay">
 <div id="contact">
 <div id=contact-container>
   <h2> Contact Me </h2>
@@ -271,12 +272,11 @@
   </div>
 </div>
 
-
-
   <!---------- CONTACT END ---------->
 
 
-
+</div>
+</div>
   
 
     <!------BANNER START ----->
@@ -337,8 +337,7 @@
         </div>
       </div>
     </div>
-    <div>
-    </div>
+
   </div>
 </main>
 

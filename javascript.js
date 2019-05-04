@@ -63,7 +63,7 @@ function musicFadeDown() {
 /*------- CONTACT START --------*/
 
 function contactFadeUp() {
-  document.getElementById("contact").style.display = "block";
+  document.getElementById("contact-overlay").style.display = "block";
   var opacity = 0;
   let intervalID; 
 
@@ -72,7 +72,7 @@ function contactFadeUp() {
       clearInterval(intervalID);
     } else {
       opacity += 5; 
-      document.getElementById("contact").style.opacity = opacity/100;
+      document.getElementById("contact-overlay").style.opacity = opacity/100;
     }
   }
 
@@ -91,15 +91,15 @@ function contactFadeDown() {
   function move() {
     if (opacity <= 0) {
       clearInterval(intervalID);
-      document.getElementById("contact").style.display = "none";
+      document.getElementById("contact-overlay").style.display = "none";
     } else {
       opacity -= 5;
       console.log(opacity);
-      document.getElementById("contact").style.opacity = opacity/100;
+      document.getElementById("contact-overlay").style.opacity = opacity/100;
     }
   }
  
-  var exists = document.getElementById("contact").style.display;
+  var exists = document.getElementById("contact-overlay").style.display;
   console.log(exists);
   if (exists === "block") {
     console.log("i am");
@@ -111,6 +111,12 @@ function contactFadeDown() {
 
 
 function home() {
+  document.getElementById("home-button").disabled = true;
+  document.getElementById("about-button").disabled = false;
+  document.getElementById("goals-button").disabled = false;
+  document.getElementById("projects-button").disabled = false;
+  document.getElementById("music-button").disabled = false;
+  document.getElementById("contact-button").disabled = false;
   homeFadeUp();
   aboutFadeDown();
   goalsFadeDown();
@@ -120,6 +126,12 @@ function home() {
 }
 
 function about() {
+  document.getElementById("home-button").disabled = false;
+  document.getElementById("about-button").disabled = true;
+  document.getElementById("goals-button").disabled = false;
+  document.getElementById("projects-button").disabled = false;
+  document.getElementById("music-button").disabled = false;
+  document.getElementById("contact-button").disabled = false;
   homeFadeDown();
   aboutFadeUp();
   goalsFadeDown();
@@ -129,6 +141,12 @@ function about() {
 }
 
 function goals() {
+  document.getElementById("home-button").disabled = false;
+  document.getElementById("about-button").disabled = false;
+  document.getElementById("goals-button").disabled = true;
+  document.getElementById("projects-button").disabled = false;
+  document.getElementById("music-button").disabled = false;
+  document.getElementById("contact-button").disabled = false;
   homeFadeDown();
   aboutFadeDown();
   goalsFadeUp();
@@ -138,6 +156,12 @@ function goals() {
 }
 
 function projects() {
+  document.getElementById("home-button").disabled = false;
+  document.getElementById("about-button").disabled = false;
+  document.getElementById("goals-button").disabled = false;
+  document.getElementById("projects-button").disabled = true;
+  document.getElementById("music-button").disabled = false;
+  document.getElementById("contact-button").disabled = false;
   homeFadeDown();
   aboutFadeDown();
   goalsFadeDown();
@@ -147,22 +171,27 @@ function projects() {
 }
 
 function music() {
+  document.getElementById("home-button").disabled = false;
+  document.getElementById("about-button").disabled = false;
+  document.getElementById("goals-button").disabled = false;
+  document.getElementById("projects-button").disabled = false;
   document.getElementById("music-button").disabled = true;
+  document.getElementById("contact-button").disabled = false;
   homeFadeDown();
   aboutFadeDown();
   goalsFadeDown();
   projectsFadeDown();
   musicFadeUp();
   contactFadeDown();
-
-  function delay() {
-    document.getElementById("music-button").disabled = false;
-  }
-
-  setTimeout(delay, 400);
 }
 
 function contact() {
+  document.getElementById("home-button").disabled = false;
+  document.getElementById("about-button").disabled = false;
+  document.getElementById("goals-button").disabled = false;
+  document.getElementById("projects-button").disabled = false;
+  document.getElementById("music-button").disabled = false;
+  document.getElementById("contact-button").disabled = true;
   homeFadeDown();
   aboutFadeDown();
   goalsFadeDown();
