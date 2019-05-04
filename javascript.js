@@ -1,25 +1,61 @@
 
 
+function pageLoad() {
+  home();
+}
+
 /*------- HOME START --------*/
 
+
+
 function homeFadeUp() {
-  document.getElementById("home").style.display = "block";
+  console.log('projects');
+  document.getElementById("home-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("home-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 20);
 }
 
 function homeFadeDown() {
-  document.getElementById("home").style.display = "none";
+  document.getElementById("home-overlay").style.display = "none";
+  document.getElementById("home-overlay").style.opacity = 0;
 }
 
 /*------- HOME END --------*/
 
 /*------- ABOUT ME START --------*/
 
+
+
 function aboutFadeUp() {
-  document.getElementById("about").style.display = "block";
+  console.log('projects');
+  document.getElementById("about-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("about-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 20);
 }
 
 function aboutFadeDown() {
-  document.getElementById("about").style.display = "none";
+  document.getElementById("about-overlay").style.display = "none";
+  document.getElementById("about-overlay").style.opacity = 0;
 }
 
 /*------- ABOUT ME END --------*/
@@ -27,11 +63,24 @@ function aboutFadeDown() {
 /*------- GOALS START --------*/
 
 function goalsFadeUp() {
-  document.getElementById("goals").style.display = "block";
+  document.getElementById("goals-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("goals-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 20);
 }
 
 function goalsFadeDown() {
-  document.getElementById("goals").style.display = "none";
+  document.getElementById("goals-overlay").style.display = "none";
+  document.getElementById("goals-overlay").style.opacity = 0;
 }
 
 /*------- GOALS END --------*/
@@ -39,11 +88,25 @@ function goalsFadeDown() {
 /*------- PROJECTS START --------*/
 
 function projectsFadeUp() {
-  document.getElementById("projects").style.display = "block";
+  console.log('projects');
+  document.getElementById("projects-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("projects-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 20);
 }
 
 function projectsFadeDown() {
-  document.getElementById("projects").style.display = "none";
+  document.getElementById("projects-overlay").style.display = "none";
+  document.getElementById("projects-overlay").style.opacity = 0;
 }
 
 /*------- PROJECTS END --------*/
@@ -51,11 +114,25 @@ function projectsFadeDown() {
 /*------- MUSIC START --------*/
 
 function musicFadeUp() {
-  document.getElementById("music").style.display = "block";
+  document.getElementById("music-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("music-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 20);
 }
 
+
 function musicFadeDown() {
-  document.getElementById("music").style.display = "none";
+  document.getElementById("music-overlay").style.display = "none";
+  document.getElementById("music-overlay").style.opacity = 0;
 }
 
 /*------- MUSIC END --------*/
@@ -75,15 +152,15 @@ function contactFadeUp() {
       document.getElementById("contact-overlay").style.opacity = opacity/100;
     }
   }
-
   intervalID = setInterval(move, 20);
-
-  
-
 }
 
-
 function contactFadeDown() {
+  document.getElementById("contact-overlay").style.display = "none";
+  document.getElementById("contact-overlay").style.opacity = 0;
+}
+
+/* function contactFadeDown() {
 
   var opacity = 100;
   let intervalID;
@@ -105,7 +182,7 @@ function contactFadeDown() {
     console.log("i am");
      intervalID = setInterval(move, 20);
   } 
-}
+} */
 
 /*------- CONTACT END --------*/
 

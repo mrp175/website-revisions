@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="no-scroll">
+<body id="no-scroll" onload="home()">
 
   <main>
     <div id="total-wrapper">
@@ -51,7 +51,7 @@
 
       <!---------------- HOME start --------------->
 
-
+      <div id="home-overlay">
       <div class="card-wrapper" id="home">
         <div class="card-large-main">
           <div class="card-large-img">
@@ -81,12 +81,14 @@
         <hr class="hr-bottom">
       </div>
     </div>
+  </div>
 
     <!---------------- HOME end ----------------->
 
 
     <!------------- ABOUT ME start -------------->
 
+    <div id="about-overlay">
     <div class="card-wrapper" id="about">
       <div class="card-large-main">
         <div class="card-large-img">
@@ -112,11 +114,13 @@
         <hr class="hr-bottom">
       </div>
     </div>
+  </div>
 
     <!-------------- ABOUT ME end --------------->
 
     <!--------------- GOALS start --------------->
 
+    <div id="goals-overlay">
     <div class="card-wrapper" id="goals">
       <div class="card-large-main">
         <div class="card-large-img">
@@ -164,12 +168,14 @@
        <hr class="hr-bottom">
      </div>
    </div>
+ </div>
 
    <!---------------- GOALS end ---------------->
 
 
-   <!--------------- PROJECTS start ------------>   
+   <!--------------- PROJECTS start ------------>  
 
+   <div id="projects-overlay">
    <div class="projects-keep-ratio-container" id="projects">
     <div class="projects-keep-ratio">
 
@@ -217,11 +223,13 @@
 
    </div>
  </div>
+</div>
 
 
  <!----------PROJECTS END -------->
 
  <!---------- MUSIC START -------->
+ <div id="music-overlay">
  <div class="card-wrapper" id="music">
   <div class="card-large-main">
     <div class="card-large-img">
@@ -252,6 +260,7 @@
     </div>
     <hr class="hr-bottom">
   </div>
+</div>
 </div>
 
 <!---------- MUSIC END ---------->

@@ -6,6 +6,7 @@ body {
     height: 100%;
     color: rgb(70, 70, 70);
     box-sizing: border-box;
+    position: relative;
 }
 
 main {
@@ -33,6 +34,14 @@ main {
     margin: 50px 25px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #uber-wrapper {
+
+  }
+
+  #super-wrapper {
+
   }
 
   #total-wrapper {
@@ -122,7 +131,7 @@ main {
     box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, .5);
     overflow: hidden;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 125px;
   }
 
   .text-border-main {
@@ -166,7 +175,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: 50px auto 125px;
     width: 100%;
     grid-gap: 8px;
     grid-template-columns: repeat(6, 1fr);
@@ -307,25 +316,20 @@ main {
 
 /*----------- containers start ---------*/
 
-#contact-overlay {
-    /* Sit on top of the page content */
-    /* Hidden by default */
+#home-overlay, #about-overlay, #goals-overlay, #projects-overlay, #music-overlay, #contact-overlay {
     width: 100%;
     height: 100%;
-    /* Full width (cover the whole page) */
-    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
-    /* Black background with opacity */
     z-index: 2;
     display: none;
-    /* Specify a stack order in case you're using a different order for other elements */
     margin: auto;
-    opacity: 0;
     overflow-y: hidden;
     box-sizing: border-box;
     padding-top: 75;
+    opacity: 0;
+    display: block;
   }
 
 /*----------- containers end ---------*/
@@ -643,7 +647,7 @@ main {
     box-shadow: 0px 0px 5px 0px;
   }
   
-  #about-overlay, #speak-overlay, #stair-overlay, #music-overlay {
+  #overlays-tests {
     position: fixed;
     /* Sit on top of the page content */
      display: none;
@@ -734,7 +738,7 @@ main {
 
   #contact-container {
   max-width: 400px;
-  margin: auto;
+  margin: 50px auto;
   box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, .5);
   border-radius: 2px;
   text-align: center;
