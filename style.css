@@ -138,6 +138,7 @@ main {
     overflow: hidden;
     margin-top: 125px;
     margin-bottom: 125px;
+    pointer-events: auto;
   }
 
   .text-border-main {
@@ -335,9 +336,9 @@ main {
     margin: auto;
     overflow-y: hidden;
     box-sizing: border-box;
-    padding-top: 75;
     opacity: 0;
     display: block;
+    pointer-events: none;
   }
 
 /*----------- containers end ---------*/
@@ -600,6 +601,7 @@ main {
     margin: 70px auto 0 auto;
     /*box-shadow: 0px 0px 18px -2px;*/
     overflow: hidden;
+    z-index: 999;
   }
   
   .icon-wrapper {
