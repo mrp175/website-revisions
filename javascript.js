@@ -147,12 +147,19 @@ function projects() {
 }
 
 function music() {
+  document.getElementById("music-button").disabled = true;
   homeFadeDown();
   aboutFadeDown();
   goalsFadeDown();
   projectsFadeDown();
   musicFadeUp();
   contactFadeDown();
+
+  function delay() {
+    document.getElementById("music-button").disabled = false;
+  }
+
+  setTimeout(delay, 400);
 }
 
 function contact() {
