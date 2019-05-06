@@ -336,16 +336,18 @@ function harmonic() {
 
 }
 
-function fadeAway() {
+function fadeOut() {
   document.getElementById("background-image-overlay").style.display = "none";
+  document.getElementById("background-image").style.display = "block";
+  document.getElementById("mega-wrapper").style.display = "block";
+  document.getElementById("overlays").style.display = "none";
 }
 
 function fadeIn() {
-  document.getElementById("background-image-overlay").style.display = "none";
-  document.getElementById("background-image-overlay").style.overflowY = "none";
+  document.getElementById("background-image-overlay").style.display = "block";
+  document.getElementById("background-image").style.display = "none";
   document.getElementById("mega-wrapper").style.display = "none";
   document.getElementById("overlays").style.display = "block";
-
 }
 
 /* projects fades - in + out end */
