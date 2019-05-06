@@ -9,239 +9,418 @@
 
   <body id="no-scroll" onload="home()" onload="checked()">
 
-    <main>
-      <div id="total-wrapper">
-        <div class="background-image">
-          <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
-        </div>
+    <main id="main">
+      
 
-        <div id="background-image-overlay">
-          <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
-        </div>
+      <div id="mega-wrapper">
 
-        <div>
-          <div id="top-bar">
-            <div id=nav-bar>
-              <div class="nav-empty-sides"></div>
-              <div class="nav-logo"> <div class=text-outline> Ptolemy Powlesland </div> </div>
-              <div class="nav-empty"></div>
-              <div class="nav-button"> <button class="nvbtn" id="home-button" onclick="home()"> HOME </button> </div>
-              <div class="nav-button"> <button class="nvbtn" id="about-button" onclick="about()"> ABOUT ME </button> </div>
-              <div class="nav-button"> <button class="nvbtn" id="goals-button" onclick="goals()"> GOALS </button> </div>
-              <div class="nav-button"> <button class="nvbtn" id="projects-button" onclick="projects()"> PROJECTS </button> </div>
-              <div class="nav-button"> <button class="nvbtn" id="music-button" onclick="music()"> MUSIC </button></div>
-              <div class="nav-button"> <button class="nvbtn" id="contact-button" onclick="contact()"> CONTACT </button> </div>
-              <div class="nav-empty-sides"></div>
-            </div>
+        <div id="total-wrapper">
+          <div class="background-image">
+            <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
           </div>
-        </div>
 
-        <!---------------- HOME start --------------->
-
-        <div id="home-overlay">
-          <div class="card-wrapper" id="home">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Welcome </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-               <p class="card-text">
-
-                  Hi, I’m Ptolemy. That's me in the red. Welcome to my one page website as part of my application for Founders and Coders. This website was created using vanilla HTML, CSS and Javascript. Please have a look round. I've included my image carousel, some interesting projects that I have worked on in recent years, as well as some of my more recent music compositions. You can find links to my freeCodeCamp, Codewars, GitHub, Codepen and SoundCloud in the footer of this page. 
-                </p>
-
-                <p class="card-text">
-                  You can find the GitHub repo for this website <a href="https://github.com/mrp175/mrp175.github.io">here</a>.
-                </p>
-
-                <p class="card-text">
-                  I have really enojoyed working on this site. It is by no means finished, although enough for my application to Founders and Coders I hope. I intend to include more content and functionality in the future.
-                </p>
-
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-        </div>
-
-        <!---------------- HOME end ----------------->
-
-
-        <!------------- ABOUT ME start -------------->
-
-        <div id="about-overlay">
-          <div class="card-wrapper" id="about">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/R9tQ6snK/profile-red-saturation-2-noise-3-sharpening.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> About Me </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-                <p class="card-text">
-
-                  After finishing my degree in music and sound technology, I wasn't exactly sure what I wanted to do with my life. Originally, I wanted to be the next super star DJ, but, I also didn't want to put all my eggs in one basket - so I've found a "proper" job to keep me going in the meantime. Whilst my love for music lives on, I found that helping others can be incredibly rewarding too, so started working for the NHS at the Gender Identity Development Service in 2016. It is a highly specialised clinic for young people who are struggling with their gender identity. It's an incredible place to work, with a great and diverse team who all work incredibly hard to support young people who are navigating new and often difficult choices. I find this field fascinating and absolutely take pride in my contribution to the help that we provide as well as the progress that we have collectively made in recent years. However, more and more recently, I have really been looking for something that will challenge me on a more creative and technical level.
-                </p>
-
-                <p class="card-text">
-
-                  Having made music for the past 15 years in my spare time has been my outlet for this, but since finding Founders and Coders and having so much fun working through the prerequisites, and seeing what is possible with a bit of technical know how, I am hoping to get on the course and am ultimately really looking forward to starting a career in web development!
-                </p>
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-        </div>
-
-        <!-------------- ABOUT ME end --------------->
-
-
-        <!--------------- GOALS start --------------->
-
-        <div id="goals-overlay">
-          <div class="card-wrapper" id="goals">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/Gct8GQqk/profile-pic-2-saturation-and-colour-corrected-2.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Goals </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-
-                <p class="card-text">
-                  Whilst I love what I do, I recognise that there is a lot of room for improvement. My philosophy revolves around three key principles: 
-                </p>
-
-                <ul class="card-text">
-                  <li> Leave the world in a better state than you found it (cliché, I know!) </li>
-                  <li> Dare to dream - be curious </li>
-                  <li> Move out of my comfort zone and GROW! </li>
-                </ul>
-
-                <p class="card-text"> 
-                  To that effect, I have worked hard to try and foster these seminal technical skills so that I can start to peel back the layers around what technology is, and what it can do for our planet. I also found that I share the same passion and enthusiasm for coding as I do for music. And finally, I recognise that “tech”, as big a field as it is, is all about problem solving, on a massive scale.  But this is just the beginning for me, and I want to push this further. So I have a few goals that I’d like to work on.
-                </p>
-
-                <p class="card-text">
-                  <b> I want to become technically competent </b> with modern web technologies. I’m really keen to understand how the simple building blocks of HTML, CSS and Javascript can be mixed together to create new experiences and even change lives. I want to be a part of this force for change as our world becomes ever more digitalised. 
-                </p>
-
-                <p class="card-text">
-                  <b> I want to put my creativity to its best use and maximise its potential. </b> As a musician and someone who has spent the last 15 years focussing relentlessly on creating personal masterpieces, I have a keen eye for detail. I’ve found whilst making this website, that It’s not just sound or music that I’ve started to pay attention to - visuals and aesthetics are important too! I believe that a job in technology could give me a vital new creative outlet, and I’m looking forward to the challenges that brings.
-                </p>
-
-                <p class="card-text"> 
-                  <b> I want to be less afraid of failure. </b> This is something I have really struggled with, and I know from my friends that in the tech world, more and more we embrace failure as part of the road to success. This is a very personal goal for me, but being more confident and less afraid of failure would help me achieve so much more, for others and for myself.
-                </p>
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-        </div>
-
-        <!---------------- GOALS end ---------------->
-
-
-        <!--------------- PROJECTS start ------------>  
-
-        <div id="projects-overlay">
-          <div class="projects-keep-ratio-container" id="projects">
-            <div class="projects-keep-ratio">
-              <div id="projects-container">
-
-                <div class="one">
-                  <button class="projects-button" onclick="circuitUp()">
-                    <img class="projects-img" src="https://i.postimg.cc/6wJg35Wh/speak-and-spell-noise-contrast.jpg">
-                    <div class="projects-text"> <h2> Circuit Bending </h2> </div>
-                  </button>
-                </div>
-
-                <div class="two"> 
-                  <button class="projects-button" onclick="circuitDown()">
-                    <img class="projects-img" src="https://i.postimg.cc/MxYYd51h/Enveloper-V4.jpg">
-                    <div class="projects-text"> <h2> MaxMSP </h2> </div>
-                  </button>
-                </div>
-
-                <div class="three"> 
-                  <button class="projects-button" onclick="carousel()">
-                    <img class="projects-img projects-img-zoom" src="https://i.postimg.cc/CwRp9nRS/carousel-new-1-vignette-dodge-2.jpg">
-                    <div class="projects-text"> <h2> Image Carousel </h2> </div>
-                  </button>
-                </div>
-
-                <div class="four">
-                  <button class="projects-button" onclick="tribute()">
-                    <img class="projects-img" src="https://i.ytimg.com/vi/aeUP4dX22GM/maxresdefault.jpg">
-                    <div class="projects-text"> <h2> Tribute Page </h2> </div>
-                  </button>
-                </div>
-
-                <div class="five"> 
-                  <button class="projects-button" onclick="harmonic()">
-                   <img class="projects-img" src="https://i.postimg.cc/pRgFN7Yy/harmonic-stair-2-vignette.jpg">
-                   <div class="projects-text"> <h2> Harmonic Stair </h2> </div>
-                 </button>
-                </div>
-
+          <div>
+            <div id="top-bar">
+              <div id=nav-bar>
+                <div class="nav-empty-sides"></div>
+                <div class="nav-logo"> <div class=text-outline> Ptolemy Powlesland </div> </div>
+                <div class="nav-empty"></div>
+                <div class="nav-button"> <button class="nvbtn" id="home-button" onclick="home()"> HOME </button> </div>
+                <div class="nav-button"> <button class="nvbtn" id="about-button" onclick="about()"> ABOUT ME </button> </div>
+                <div class="nav-button"> <button class="nvbtn" id="goals-button" onclick="goals()"> GOALS </button> </div>
+                <div class="nav-button"> <button class="nvbtn" id="projects-button" onclick="projects()"> PROJECTS </button> </div>
+                <div class="nav-button"> <button class="nvbtn" id="music-button" onclick="music()"> MUSIC </button></div>
+                <div class="nav-button"> <button class="nvbtn" id="contact-button" onclick="contact()"> CONTACT </button> </div>
+                <div class="nav-empty-sides"></div>
               </div>
             </div>
           </div>
 
-          <!--------- OVERLAY CIRCUIT BENDING START -------->
+          <!---------------- HOME start --------------->
 
-          <div id=circuit-overlay>
-            <div class="card-wrapper">
+          <div id="home-overlay">
+            <div class="card-wrapper" id="home">
               <div class="card-large-main">
                 <div class="card-large-img">
-                  <img class="card-img-fit" src="https://i.postimg.cc/Zb2xNfdg/speak-and-spell-v7.jpg">
+                  <img class="card-img-fit" src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
 
                   <div class="text-box">
-                    <h2 class="no-margin"> Circuit Bending the Speak & Spell </h2>
+                    <h2 class="no-margin"> Welcome </h2>
                   </div>
                 </div>
 
                 <hr class="hr-top">
 
                 <div class="text-border-main">
-                  <p class="card-text"> 
-                    Do you remember all the old electronic toys that you used to have that made noise. Well circuit bending is the art of taking those toys apart and re-wiring the interals to create cool new sounds and instruments. You usually have no idea what connecting one point on the circuit board will do until you try, but if it creates a cool noise then you can solder the two contacts making perminant modificaitons. Then you can add switches or knobs and attach them to the case, providing a convinient way to control everything. 
+                 <p class="card-text">
+
+                    Hi, I’m Ptolemy. That's me in the red. Welcome to my one page website as part of my application for Founders and Coders. This website was created using vanilla HTML, CSS and Javascript. Please have a look round. I've included my image carousel, some interesting projects that I have worked on in recent years, as well as some of my more recent music compositions. You can find links to my freeCodeCamp, Codewars, GitHub, Codepen and SoundCloud in the footer of this page. 
                   </p>
 
-                  <div class="picture-wrapper">
-                    <div class="text-img-container">
-                      <img class="text-img" src="https://i.postimg.cc/LR9bdVjM/speak-and-spell-centering-v6-test-2.jpg">
-                    </div>
+                  <p class="card-text">
+                    You can find the GitHub repo for this website <a href="https://github.com/mrp175/mrp175.github.io">here</a>.
+                  </p>
+
+                  <p class="card-text">
+                    I have really enojoyed working on this site. It is by no means finished, although enough for my application to Founders and Coders I hope. I intend to include more content and functionality in the future.
+                  </p>
+
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+          </div>
+
+          <!---------------- HOME end ----------------->
+
+
+          <!------------- ABOUT ME start -------------->
+
+          <div id="about-overlay">
+            <div class="card-wrapper" id="about">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/R9tQ6snK/profile-red-saturation-2-noise-3-sharpening.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> About Me </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+                  <p class="card-text">
+
+                    After finishing my degree in music and sound technology, I wasn't exactly sure what I wanted to do with my life. Originally, I wanted to be the next super star DJ, but, I also didn't want to put all my eggs in one basket - so I've found a "proper" job to keep me going in the meantime. Whilst my love for music lives on, I found that helping others can be incredibly rewarding too, so started working for the NHS at the Gender Identity Development Service in 2016. It is a highly specialised clinic for young people who are struggling with their gender identity. It's an incredible place to work, with a great and diverse team who all work incredibly hard to support young people who are navigating new and often difficult choices. I find this field fascinating and absolutely take pride in my contribution to the help that we provide as well as the progress that we have collectively made in recent years. However, more and more recently, I have really been looking for something that will challenge me on a more creative and technical level.
+                  </p>
+
+                  <p class="card-text">
+
+                    Having made music for the past 15 years in my spare time has been my outlet for this, but since finding Founders and Coders and having so much fun working through the prerequisites, and seeing what is possible with a bit of technical know how, I am hoping to get on the course and am ultimately really looking forward to starting a career in web development!
+                  </p>
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+          </div>
+
+          <!-------------- ABOUT ME end --------------->
+
+
+          <!--------------- GOALS start --------------->
+
+          <div id="goals-overlay">
+            <div class="card-wrapper" id="goals">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/Gct8GQqk/profile-pic-2-saturation-and-colour-corrected-2.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> Goals </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    Whilst I love what I do, I recognise that there is a lot of room for improvement. My philosophy revolves around three key principles: 
+                  </p>
+
+                  <ul class="card-text">
+                    <li> Leave the world in a better state than you found it (cliché, I know!) </li>
+                    <li> Dare to dream - be curious </li>
+                    <li> Move out of my comfort zone and GROW! </li>
+                  </ul>
+
+                  <p class="card-text"> 
+                    To that effect, I have worked hard to try and foster these seminal technical skills so that I can start to peel back the layers around what technology is, and what it can do for our planet. I also found that I share the same passion and enthusiasm for coding as I do for music. And finally, I recognise that “tech”, as big a field as it is, is all about problem solving, on a massive scale.  But this is just the beginning for me, and I want to push this further. So I have a few goals that I’d like to work on.
+                  </p>
+
+                  <p class="card-text">
+                    <b> I want to become technically competent </b> with modern web technologies. I’m really keen to understand how the simple building blocks of HTML, CSS and Javascript can be mixed together to create new experiences and even change lives. I want to be a part of this force for change as our world becomes ever more digitalised. 
+                  </p>
+
+                  <p class="card-text">
+                    <b> I want to put my creativity to its best use and maximise its potential. </b> As a musician and someone who has spent the last 15 years focussing relentlessly on creating personal masterpieces, I have a keen eye for detail. I’ve found whilst making this website, that It’s not just sound or music that I’ve started to pay attention to - visuals and aesthetics are important too! I believe that a job in technology could give me a vital new creative outlet, and I’m looking forward to the challenges that brings.
+                  </p>
+
+                  <p class="card-text"> 
+                    <b> I want to be less afraid of failure. </b> This is something I have really struggled with, and I know from my friends that in the tech world, more and more we embrace failure as part of the road to success. This is a very personal goal for me, but being more confident and less afraid of failure would help me achieve so much more, for others and for myself.
+                  </p>
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+          </div>
+
+          <!---------------- GOALS end ---------------->
+
+
+          <!--------------- PROJECTS start ------------>  
+
+          <div id="projects-overlay">
+            <div class="projects-keep-ratio-container" id="projects">
+              <div class="projects-keep-ratio">
+                <div id="projects-container">
+
+                  <div class="one">
+                    <button class="projects-button" onclick="circuitUp();fadeIn()">
+                      <img class="projects-img" src="https://i.postimg.cc/6wJg35Wh/speak-and-spell-noise-contrast.jpg">
+                      <div class="projects-text"> <h2> Circuit Bending </h2> </div>
+                    </button>
                   </div>
 
-                  <p class="card-text">  
-                    The original Speak & Spell from Texas Instruments is a popular choice and has a number cool mods that you can add, so I thought I would see what I could come up with. Soldering tiny contacts is a lot harder than I thought it would be, and the back it a bit of a mess, but it is functional and was a great oportunity to look into how old electronics work. Check out the video below to see what I came up with. 
+                  <div class="two"> 
+                    <button class="projects-button" onclick="circuitDown()">
+                      <img class="projects-img" src="https://i.postimg.cc/MxYYd51h/Enveloper-V4.jpg">
+                      <div class="projects-text"> <h2> MaxMSP </h2> </div>
+                    </button>
+                  </div>
+
+                  <div class="three"> 
+                    <button class="projects-button" onclick="carousel()">
+                      <img class="projects-img projects-img-zoom" src="https://i.postimg.cc/CwRp9nRS/carousel-new-1-vignette-dodge-2.jpg">
+                      <div class="projects-text"> <h2> Image Carousel </h2> </div>
+                    </button>
+                  </div>
+
+                  <div class="four">
+                    <button class="projects-button" onclick="tribute()">
+                      <img class="projects-img" src="https://i.ytimg.com/vi/aeUP4dX22GM/maxresdefault.jpg">
+                      <div class="projects-text"> <h2> Tribute Page </h2> </div>
+                    </button>
+                  </div>
+
+                  <div class="five"> 
+                    <button class="projects-button" onclick="harmonic()">
+                     <img class="projects-img" src="https://i.postimg.cc/pRgFN7Yy/harmonic-stair-2-vignette.jpg">
+                     <div class="projects-text"> <h2> Harmonic Stair </h2> </div>
+                   </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!--------- OVERLAY CIRCUIT MAXMSP START -------->
+
+            <div class="card-wrapper">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/MxYYd51h/Enveloper-V4.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> MaxMSP - Creating an Audio Plugin </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    In 2016 I completed work on a university project with the creation of an audio plugin using MaxMSP. MaxMSP is a visual programming language which is specifically designed for sound and multimedia. The design of the program itself is modular, whereby you create objects that perform very specific functions, but can be wired up to each other to create very complex and interesting projects. Whilst it was somewhat buggy, and limiting in some ways, especially for a novice like myself in that I couldn't always find ways to do things, it was great fun and really opened up my eyes to the possibilites of programming. 
+                  </p>
+
+                  <p class="card-text">
+                    The plugin, which I have called The Enveloper, is an audio effects unit which centres around the use of an envelope follow to modulate a number of effects. In simple terms, an evelope follower follows the volume of a sound over time and then outputs data based on how loud it is. You can have a look at a demo video of my working project below, but I strongly suggest you take a look at my blog for this project as it really gives a better idea of how things work, the processes involved in the creation of such a device, and an insight into my way of working as well.
+                  </p>
+
+                  <p class="card-text"> 
+                    You can find a link to my blog <a href="https://mrp175distort.tumblr.com/" target="blank">here</a>. You will need to scroll to the bottom of the blog page to read it in chonological order due to the way Tumblr works. 
                   </p>
 
                   <div class="iframe-wrapper">  
                     <div class="iframe-container">
-                      <iframe src="https://www.youtube-nocookie.com/embed/dqCmYYFgxiU?modestbranding=1" allow="encrypted-media" allowfullscreen></iframe>
+                      <iframe src="https://www.youtube-nocookie.com/embed/phICRmCDaDE" allow="encrypted-media" allowfullscreen></iframe>
                     </div>
+                  </div>
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+
+            <!---------- OVERLAY CIRCUIT MAXMSP END --------->
+
+            <!---------- OVERLAY IMAGE CAROUSEL START --------->
+
+            <div class="card-wrapper">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/CwRp9nRS/carousel-new-1-vignette-dodge-2.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> Creating an Image Carousel </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    This is my image carousel, which is one of the prerequisites for the application. The images are being moved using javascript and DOM manipulation, and I've used flexbox to put all the images in a line, but have hidden any that are "off the screen"
+                  </p>
+
+                  <p class="card-text">
+                    You can find a link to my Codepen for this here 
+
+                    <a href="https://codepen.io/mrp175/pen/NerdKZ" target="blank">here</a>
+                  </p>
+
+                  <div class="iframe-wrapper">
+                    <div id="carousel-container">
+                      <div id="carousel-image">
+                        <button id="carousel-left-button" onclick="left()"> <div id="carousel-left-arrow"></div> </button>
+                        <button id="carousel-right-button" onclick="right()"> <div id="carousel-right-arrow"></div> </button>
+                        <div id="carousel-checkbox-container">
+                          <input id="carousel-hidden" type="checkbox" name="autoplay" value="Autoplay">
+
+                          <div id="carousel-checkbox"> 
+                            <div id="carousel-autoplay-text"> Autoplay </div>
+                          </div>
+                        </div> 
+
+                        <div id="carousel-images">
+                          <img src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
+                          <img src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
+                          <img src="https://i.postimg.cc/R9tQ6snK/profile-red-saturation-2-noise-3-sharpening.jpg">
+                          <img src="https://i.postimg.cc/Zb2xNfdg/speak-and-spell-v7.jpg">
+                          <img src="https://i.postimg.cc/Gct8GQqk/profile-pic-2-saturation-and-colour-corrected-2.jpg">
+                          <img src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
+                          <img src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+
+            <!---------- OVERLAY IMAGE CAROUSEL START --------->
+
+            <!---------- OVERLAY TRIBUTE PAGE START --------->
+
+            <div class="card-wrapper">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/7wNF5M2x/robin-williams-1-v3.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> Tribute Page - Robin Williams</h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    One of the responsive web design projects for the freeCodeCamp curriculum is to build a tribute page. This was the first web page I ever built, and the most of the CSS is inline with the HTML. Yikes! Nonetheless, I though it would be worth showing where it all began. 
+                  </p>
+
+                  <p class="card-text"> 
+                    The web page is hosted <a href="https://mrp175.github.io/robinwilliams/" target="blank"> here</a>, although I've also embeded the Codepen for it below as well.
+                  </p>
+
+                  <div class="iframe-wrapper">
+                    <p class="codepen" data-height="707" data-theme-id="dark" data-default-tab="result" data-user="mrp175" data-slug-hash="brZBXV" style="height: 707px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Robin Williams test">
+                      <span>See the Pen <a href="https://codepen.io/mrp175/pen/brZBXV/">
+                      Robin Williams test</a> by Ptolemy (<a href="https://codepen.io/mrp175">@mrp175</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  </div>
+                </div>
+
+                <hr class="hr-bottom">            
+              </div>
+            </div>
+
+            <!---------- OVERLAY TRIBUTE PAGE END --------->
+
+            <!---------- OVERLAY HARMONIC STAIR END --------->
+
+            <div class="card-wrapper">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/BqxCBJJ0/harmonic-stair-2-vignette-doged-v1.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> Harmonic Stair - An Interactive Sound Installation </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    The Harmonic Stiar is another project that I did for university. You'll get the best idea about the project and how things worked by watching the video which I've embedded below. It was cool and fun thing to work on and was really interesting to see how it's possible to augment spaces in real time with sound and technology.
+                  </p>
+
+                  <div class="iframe-wrapper">  
+                    <div class="iframe-container">
+                      <iframe src="https://www.youtube.com/embed/oV_QcizpdQo" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                  <p class="card-text">
+                    We ran the Harmonic Stair all afternoon, but here is a snippet of some of the audio which we took directly out of the computer. 
+                  </p>
+
+                  <div class="soundcloud-container">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/613867737%3Fsecret_token%3Ds-iJxsr&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                  </div>
+
+                </div>
+
+                <hr class="hr-bottom">
+              </div>
+            </div>
+
+            <!---------- OVERLAY HARMONIC STAIR END --------->
+
+          </div>
+
+          <!----------PROJECTS END -------->
+
+          <!---------- MUSIC START -------->
+
+          <div id="music-overlay">
+            <div class="card-wrapper" id="music">
+              <div class="card-large-main">
+                <div class="card-large-img">
+                  <img class="card-img-fit" src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
+
+                  <div class="text-box">
+                    <h2 class="no-margin"> Music </h2>
+                  </div>
+                </div>
+
+                <hr class="hr-top">
+
+                <div class="text-border-main">
+
+                  <p class="card-text">
+                    Music has been a big part of my life since I was around 12 or 13. My brother showed my some of his drum and bass vinyls and I was hooked. I Shortly after that I was given a copy of Reason 2.5 for my birthday, so I got to work and haven't stopped since. It's a great outlet for my creativity and gives me the opportunity to build (what I would consider) complex and technically impressive works. Each new song is like solving a puzzle. You need to know what elements to add, and how to do that. Both are things that I still struggle with to this day. 
+                  </p>
+
+                  <p class="card-text">
+                    I've embeded a SoundCloud player below with a some of my more recent works. I hope you enjoy!
+                  </p>
+
+                  <div class="soundcloud-container">
+                    <iframe  width="100%" height="471" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/579291123%3Fsecret_token%3Ds-9vTng&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                   </div>
                 </div>
 
@@ -250,313 +429,145 @@
             </div>
           </div>
 
-          <!---------- OVERLAY CIRCUIT BENDING END --------->
+          <!---------- MUSIC END ---------->
 
-          <!--------- OVERLAY CIRCUIT MAXMSP START -------->
+          <!---------- CONTACT START -------->
 
+          <div id="contact-overlay">
+            <div id="contact">
+              <div id=contact-container>
+                <h2> Contact Me </h2>
+
+                <p> Comments and Suggestions Welcome</p>
+
+                <form id="contact-form">
+                  <input class="contact-textbox" type="text" name="name" placeholder="Your name" required>
+                  <input class="contact-textbox" type="text" name="email" placeholder="Your email address" required>
+                  <textarea class="contact-messagebox" placeholder="Type your Message Here...." required></textarea>
+                  <input class="contact-submit" type="submit" name="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!---------- CONTACT END ---------->
+        </div>
+
+        <!------BANNER START ----->
+
+        <div class="foot-banner">
+          <div class="icon-wrapper">
+            <div id="icons">
+
+              <div id="relative">
+                <a href="https://www.freecodecamp.org/mrp175" target="_blank">
+                  <img id="icon" src="https://i.postimg.cc/Rhc4rq9r/freecodecamp-white.png">
+                </a>
+              </div>
+
+              <div id="relative">
+                <a href="https://www.codewars.com/users/mrp175" target="_blank">
+                  <img id="icon" src="https://i.postimg.cc/zXF80L0K/codewars-white.png">
+                </a>
+              </div>
+
+              <div id="relative">
+                <a href="https://github.com/mrp175/" target="_blank">
+                  <img id="icon" src="https://i.postimg.cc/3JT3XjC3/github-white.png">
+                </a>
+              </div>
+
+              <div id="relative">
+                <a href="https://codepen.io/mrp175/" target="_blank">
+                  <img id="icon" src="https://i.postimg.cc/5291GxRG/Codepen-white.png">
+                </a>
+              </div>
+
+              <div id="relative">
+                <a href="https://soundcloud.com/mrp175" target="_blank">
+                  <img id="icon" src="https://i.postimg.cc/zDWJH2hd/soundcloud-white.png">
+                </a>
+              </div>
+
+
+              <div id="relative">
+                <a class="text-color" href="https://www.freecodecamp.org/mrp175" target="_blank">freeCodeCamp</a>
+              </div>
+
+              <div id="relative">
+                <a class="text-color" href="https://www.codewars.com/users/mrp175" target="_blank">Codewars</a>
+              </div>
+
+              <div id="relative">
+                <a class="text-color" href="https://github.com/mrp175/" target="_blank">GitHub</a>
+              </div>
+
+              <div id="relative">
+                <a class="text-color" href="https://codepen.io/mrp175/" target="_blank">Codepen</a>
+              </div>
+
+              <div id="relative">
+                <a class="text-color" href="https://soundcloud.com/mrp175" target="_blank">SounCloud</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--------- OVERLAYS START ---->
+
+      
+      <!--------- OVERLAY CIRCUIT BENDING START -------->
+      <div id="overlays">
+        <div id="background-image-overlay">
+          <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
+        </div>
+      
+        <div id=circuit-overlay>
           <div class="card-wrapper">
             <div class="card-large-main">
               <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/MxYYd51h/Enveloper-V4.jpg">
+                <img class="card-img-fit" src="https://i.postimg.cc/Zb2xNfdg/speak-and-spell-v7.jpg">
 
                 <div class="text-box">
-                  <h2 class="no-margin"> MaxMSP - Creating an Audio Plugin </h2>
+                  <h2 class="no-margin"> Circuit Bending the Speak & Spell </h2>
                 </div>
               </div>
 
               <hr class="hr-top">
 
               <div class="text-border-main">
-
-                <p class="card-text">
-                  In 2016 I completed work on a university project with the creation of an audio plugin using MaxMSP. MaxMSP is a visual programming language which is specifically designed for sound and multimedia. The design of the program itself is modular, whereby you create objects that perform very specific functions, but can be wired up to each other to create very complex and interesting projects. Whilst it was somewhat buggy, and limiting in some ways, especially for a novice like myself in that I couldn't always find ways to do things, it was great fun and really opened up my eyes to the possibilites of programming. 
-                </p>
-
-                <p class="card-text">
-                  The plugin, which I have called The Enveloper, is an audio effects unit which centres around the use of an envelope follow to modulate a number of effects. In simple terms, an evelope follower follows the volume of a sound over time and then outputs data based on how loud it is. You can have a look at a demo video of my working project below, but I strongly suggest you take a look at my blog for this project as it really gives a better idea of how things work, the processes involved in the creation of such a device, and an insight into my way of working as well.
-                </p>
-
                 <p class="card-text"> 
-                  You can find a link to my blog <a href="https://mrp175distort.tumblr.com/" target="blank">here</a>. You will need to scroll to the bottom of the blog page to read it in chonological order due to the way Tumblr works. 
+                  Do you remember all the old electronic toys that you used to have that made noise. Well circuit bending is the art of taking those toys apart and re-wiring the interals to create cool new sounds and instruments. You usually have no idea what connecting one point on the circuit board will do until you try, but if it creates a cool noise then you can solder the two contacts making perminant modificaitons. Then you can add switches or knobs and attach them to the case, providing a convinient way to control everything. 
+                </p>
+
+                <div class="picture-wrapper">
+                  <div class="text-img-container">
+                    <img class="text-img" src="https://i.postimg.cc/LR9bdVjM/speak-and-spell-centering-v6-test-2.jpg">
+                  </div>
+                </div>
+
+                <p class="card-text">  
+                  The original Speak & Spell from Texas Instruments is a popular choice and has a number cool mods that you can add, so I thought I would see what I could come up with. Soldering tiny contacts is a lot harder than I thought it would be, and the back it a bit of a mess, but it is functional and was a great oportunity to look into how old electronics work. Check out the video below to see what I came up with. 
                 </p>
 
                 <div class="iframe-wrapper">  
                   <div class="iframe-container">
-                    <iframe src="https://www.youtube-nocookie.com/embed/phICRmCDaDE" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/dqCmYYFgxiU?modestbranding=1" allow="encrypted-media" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
 
               <hr class="hr-bottom">
             </div>
-          </div>
-
-          <!---------- OVERLAY CIRCUIT MAXMSP END --------->
-
-          <!---------- OVERLAY IMAGE CAROUSEL START --------->
-
-          <div class="card-wrapper">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/CwRp9nRS/carousel-new-1-vignette-dodge-2.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Creating an Image Carousel </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-
-                <p class="card-text">
-                  This is my image carousel, which is one of the prerequisites for the application. The images are being moved using javascript and DOM manipulation, and I've used flexbox to put all the images in a line, but have hidden any that are "off the screen"
-                </p>
-
-                <p class="card-text">
-                  You can find a link to my Codepen for this here 
-
-                  <a href="https://codepen.io/mrp175/pen/NerdKZ" target="blank">here</a>
-                </p>
-
-                <div class="iframe-wrapper">
-                  <div id="carousel-container">
-                    <div id="carousel-image">
-                      <button id="carousel-left-button" onclick="left()"> <div id="carousel-left-arrow"></div> </button>
-                      <button id="carousel-right-button" onclick="right()"> <div id="carousel-right-arrow"></div> </button>
-                      <div id="carousel-checkbox-container">
-                        <input id="carousel-hidden" type="checkbox" name="autoplay" value="Autoplay">
-
-                        <div id="carousel-checkbox"> 
-                          <div id="carousel-autoplay-text"> Autoplay </div>
-                        </div>
-                      </div> 
-
-                      <div id="carousel-images">
-                        <img src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
-                        <img src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
-                        <img src="https://i.postimg.cc/R9tQ6snK/profile-red-saturation-2-noise-3-sharpening.jpg">
-                        <img src="https://i.postimg.cc/Zb2xNfdg/speak-and-spell-v7.jpg">
-                        <img src="https://i.postimg.cc/Gct8GQqk/profile-pic-2-saturation-and-colour-corrected-2.jpg">
-                        <img src="https://i.postimg.cc/54gBrxRd/Rosalind-and-the-boys-Shirleen-colour-corrected-V8.jpg">
-                        <img src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
-                      </div>
-                    </div>  
-                  </div>
-                </div>
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-
-          <!---------- OVERLAY IMAGE CAROUSEL START --------->
-
-          <!---------- OVERLAY TRIBUTE PAGE START --------->
-
-          <div class="card-wrapper">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/7wNF5M2x/robin-williams-1-v3.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Tribute Page - Robin Williams</h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-
-                <p class="card-text">
-                  One of the responsive web design projects for the freeCodeCamp curriculum is to build a tribute page. This was the first web page I ever built, and the most of the CSS is inline with the HTML. Yikes! Nonetheless, I though it would be worth showing where it all began. 
-                </p>
-
-                <p class="card-text"> 
-                  The web page is hosted <a href="https://mrp175.github.io/robinwilliams/" target="blank"> here</a>, although I've also embeded the Codepen for it below as well.
-                </p>
-
-                <div class="iframe-wrapper">
-                  <p class="codepen" data-height="707" data-theme-id="dark" data-default-tab="result" data-user="mrp175" data-slug-hash="brZBXV" style="height: 707px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Robin Williams test">
-                    <span>See the Pen <a href="https://codepen.io/mrp175/pen/brZBXV/">
-                    Robin Williams test</a> by Ptolemy (<a href="https://codepen.io/mrp175">@mrp175</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-              </div>
-
-              <hr class="hr-bottom">            
-            </div>
-          </div>
-
-          <!---------- OVERLAY TRIBUTE PAGE END --------->
-
-          <!---------- OVERLAY HARMONIC STAIR END --------->
-
-          <div class="card-wrapper">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/BqxCBJJ0/harmonic-stair-2-vignette-doged-v1.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Harmonic Stair - An Interactive Sound Installation </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-
-                <p class="card-text">
-                  The Harmonic Stiar is another project that I did for university. You'll get the best idea about the project and how things worked by watching the video which I've embedded below. It was cool and fun thing to work on and was really interesting to see how it's possible to augment spaces in real time with sound and technology.
-                </p>
-
-                <div class="iframe-wrapper">  
-                  <div class="iframe-container">
-                    <iframe src="https://www.youtube.com/embed/oV_QcizpdQo" allow="encrypted-media" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <p class="card-text">
-                  We ran the Harmonic Stair all afternoon, but here is a snippet of some of the audio which we took directly out of the computer. 
-                </p>
-
-                <div class="soundcloud-container">
-                  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/613867737%3Fsecret_token%3Ds-iJxsr&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                </div>
-
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-
-          <!---------- OVERLAY HARMONIC STAIR END --------->
-
-        </div>
-
-        <!----------PROJECTS END -------->
-
-        <!---------- MUSIC START -------->
-
-        <div id="music-overlay">
-          <div class="card-wrapper" id="music">
-            <div class="card-large-main">
-              <div class="card-large-img">
-                <img class="card-img-fit" src="https://i.postimg.cc/2zNqYPsH/Music-sharpened-noise-compressed-3.jpg">
-
-                <div class="text-box">
-                  <h2 class="no-margin"> Music </h2>
-                </div>
-              </div>
-
-              <hr class="hr-top">
-
-              <div class="text-border-main">
-
-                <p class="card-text">
-                  Music has been a big part of my life since I was around 12 or 13. My brother showed my some of his drum and bass vinyls and I was hooked. I Shortly after that I was given a copy of Reason 2.5 for my birthday, so I got to work and haven't stopped since. It's a great outlet for my creativity and gives me the opportunity to build (what I would consider) complex and technically impressive works. Each new song is like solving a puzzle. You need to know what elements to add, and how to do that. Both are things that I still struggle with to this day. 
-                </p>
-
-                <p class="card-text">
-                  I've embeded a SoundCloud player below with a some of my more recent works. I hope you enjoy!
-                </p>
-
-                <div class="soundcloud-container">
-                  <iframe  width="100%" height="471" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/579291123%3Fsecret_token%3Ds-9vTng&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                </div>
-              </div>
-
-              <hr class="hr-bottom">
-            </div>
-          </div>
-        </div>
-
-        <!---------- MUSIC END ---------->
-
-        <!---------- CONTACT START -------->
-
-        <div id="contact-overlay">
-          <div id="contact">
-            <div id=contact-container>
-              <h2> Contact Me </h2>
-
-              <p> Comments and Suggestions Welcome</p>
-
-              <form id="contact-form">
-                <input class="contact-textbox" type="text" name="name" placeholder="Your name" required>
-                <input class="contact-textbox" type="text" name="email" placeholder="Your email address" required>
-                <textarea class="contact-messagebox" placeholder="Type your Message Here...." required></textarea>
-                <input class="contact-submit" type="submit" name="submit" value="Submit">
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!---------- CONTACT END ---------->
-      </div>
-
-      <!------BANNER START ----->
-
-      <div class="foot-banner">
-        <div class="icon-wrapper">
-          <div id="icons">
-
-            <div id="relative">
-              <a href="https://www.freecodecamp.org/mrp175" target="_blank">
-                <img id="icon" src="https://i.postimg.cc/Rhc4rq9r/freecodecamp-white.png">
-              </a>
-            </div>
-
-            <div id="relative">
-              <a href="https://www.codewars.com/users/mrp175" target="_blank">
-                <img id="icon" src="https://i.postimg.cc/zXF80L0K/codewars-white.png">
-              </a>
-            </div>
-
-            <div id="relative">
-              <a href="https://github.com/mrp175/" target="_blank">
-                <img id="icon" src="https://i.postimg.cc/3JT3XjC3/github-white.png">
-              </a>
-            </div>
-
-            <div id="relative">
-              <a href="https://codepen.io/mrp175/" target="_blank">
-                <img id="icon" src="https://i.postimg.cc/5291GxRG/Codepen-white.png">
-              </a>
-            </div>
-
-            <div id="relative">
-              <a href="https://soundcloud.com/mrp175" target="_blank">
-                <img id="icon" src="https://i.postimg.cc/zDWJH2hd/soundcloud-white.png">
-              </a>
-            </div>
-
-
-            <div id="relative">
-              <a class="text-color" href="https://www.freecodecamp.org/mrp175" target="_blank">freeCodeCamp</a>
-            </div>
-
-            <div id="relative">
-              <a class="text-color" href="https://www.codewars.com/users/mrp175" target="_blank">Codewars</a>
-            </div>
-
-            <div id="relative">
-              <a class="text-color" href="https://github.com/mrp175/" target="_blank">GitHub</a>
-            </div>
-
-            <div id="relative">
-              <a class="text-color" href="https://codepen.io/mrp175/" target="_blank">Codepen</a>
-            </div>
-
-            <div id="relative">
-              <a class="text-color" href="https://soundcloud.com/mrp175" target="_blank">SounCloud</a>
-            </div>
-
           </div>
         </div>
       </div>
+
+      <!---------- OVERLAY CIRCUIT BENDING END --------->
+
     </main>
   </body>
 <script src="javascript.js"></script>

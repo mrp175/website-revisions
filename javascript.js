@@ -187,6 +187,9 @@ function contactFadeDown() {
 /*------- CONTACT END --------*/
 
 
+/* NAV BUTTONS START */
+
+
 function home() {
   document.getElementById("home-button").disabled = true;
   document.getElementById("about-button").disabled = false;
@@ -276,3 +279,78 @@ function contact() {
   musicFadeDown();
   contactFadeUp();
 }
+
+/* NAV BUTTONS END */
+
+/* projects fades - in + out start */
+
+/* circuit bending start */
+
+function circuitUp() {
+  document.getElementById("circuit-overlay").style.display = "block";
+  var opacity = 0;
+  let intervalID; 
+
+  function move() {
+    if (opacity >= 100) {
+      clearInterval(intervalID);
+    } else {
+      opacity += 5; 
+      document.getElementById("circuit-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 10);
+}
+
+function circuitDown() {
+  document.getElementById("circuit-overlay").style.display = "block";
+  var opacity = 100;
+  let intervalID; 
+
+  function move() {
+    if (opacity <= 0) {
+      clearInterval(intervalID);
+    } else {
+      opacity -= 5; 
+      document.getElementById("circuit-overlay").style.opacity = opacity/100;
+    }
+  }
+  intervalID = setInterval(move, 10);
+}
+
+/* circuit bending end */
+
+function maxmsp() {
+
+}
+
+function carousel() {
+
+}
+
+function tribute() {
+
+}
+
+function harmonic() {
+
+}
+
+function fadeAway() {
+  document.getElementById("background-image-overlay").style.display = "none";
+}
+
+function fadeIn() {
+  document.getElementById("background-image-overlay").style.display = "none";
+  document.getElementById("background-image-overlay").style.overflowY = "none";
+  document.getElementById("mega-wrapper").style.display = "none";
+  document.getElementById("overlays").style.display = "block";
+
+}
+
+/* projects fades - in + out end */
+
+/* PROJECT BUTTONS START */
+
+
+/* PROJECT BUTTONS END */

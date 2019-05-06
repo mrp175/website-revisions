@@ -10,9 +10,7 @@ body {
 }
 
 main {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+
 }
   
   h1 {
@@ -40,8 +38,8 @@ main {
 
   }
 
-  #super-wrapper {
-
+  #mega-wrapper {
+    display: block;
   }
 
   #total-wrapper {
@@ -124,6 +122,50 @@ main {
 
 
 /*---------------NAV BAR END-------------*/
+
+/*----------- containers start ---------*/
+
+#home-overlay, #about-overlay, #goals-overlay, #projects-overlay, #music-overlay, #contact-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+  }
+
+#circuit-overlay, #maxmsp-overlay, #carousel-overlay, #harmonic-overlay, #tribute-overlay {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  overflow-y: scroll;
+  pointer-events: none;
+}
+
+#overlays {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 99vh;
+  width: 99vw;
+  display: none;
+}
+
+/*----------- containers end ---------*/
 
 /*------------ MAIN PAGE START-----------*/
 
@@ -324,25 +366,7 @@ main {
 
 /*-------------- PROJECTS END -----------*/
 
-/*----------- containers start ---------*/
 
-#home-overlay, #about-overlay, #goals-overlay, #projects-overlay, #music-overlay, #contact-overlay {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    display: none;
-    margin: auto;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    opacity: 0;
-    display: block;
-    pointer-events: none;
-  }
-
-/*----------- containers end ---------*/
 
 .picture-wrapper {
     margin: 15px 60px;
@@ -407,9 +431,10 @@ main {
   
   #background-image-overlay {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     display: none;
-    opacity: 0;
+    background: black;
+    opacity: 0.5;
   }
   
   .actual-image {
