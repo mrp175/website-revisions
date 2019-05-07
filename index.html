@@ -11,6 +11,9 @@
 
     <main id="main">
       
+      <div id="background-image-overlay">
+          <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
+      </div>
 
       <div id="mega-wrapper">
 
@@ -170,7 +173,7 @@
                 <div id="projects-container">
 
                   <div class="one">
-                    <button class="projects-button" onclick="circuitUp();fadeIn()">
+                    <button class="projects-button" onclick="circuitUp();fadeIn();">
                       <img class="projects-img" src="https://i.postimg.cc/6wJg35Wh/speak-and-spell-noise-contrast.jpg">
                       <div class="projects-text"> <h2> Circuit Bending </h2> </div>
                     </button>
@@ -521,10 +524,6 @@
       
       <!--------- OVERLAY CIRCUIT BENDING START -------->
       <div id="overlays">
-        <div id="background-image-overlay">
-          <img class="actual-image" src="http://photos.polarfox.com/free/download/city-photo-blurry-skyline_Polarfox.jpg">
-        </div>
-      
         <div id=circuit-overlay>
           <div class="card-wrapper">
             <div class="card-large-main">
@@ -535,7 +534,8 @@
                   <h2 class="no-margin"> Circuit Bending the Speak & Spell </h2>
                 </div>
 
-                <div class="close">  <button class="close-button" onclick="fadeOut();circuitDown()"> &times; </button> </div>
+                <div class="close">  <button class="close-button" onclick="fadeOut();circuitDown()"> &times; </button> 
+                </div>
 
               </div>
 

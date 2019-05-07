@@ -294,6 +294,8 @@ function circuitUp() {
   function move() {
     if (opacity >= 100) {
       clearInterval(intervalID);
+      document.getElementById("circuit-overlay").style.overflowY = "scroll";
+      document.getElementById("no-scroll").style.overflowY = "hidden";
     } else {
       opacity += 5; 
       document.getElementById("circuit-overlay").style.opacity = opacity/100;
@@ -310,6 +312,7 @@ function circuitDown() {
   function move() {
     if (opacity <= 0) {
       clearInterval(intervalID);
+      document.getElementById("circuit-overlay").style.overflowY = "hidden";
     } else {
       opacity -= 5; 
       document.getElementById("circuit-overlay").style.opacity = opacity/100;
@@ -339,15 +342,58 @@ function harmonic() {
 function fadeOut() {
   document.getElementById("background-image-overlay").style.display = "none";
   document.getElementById("background-image").style.display = "block";
+  document.getElementById("background-image").style.opacity = 1;
   document.getElementById("mega-wrapper").style.display = "block";
+  document.getElementById("mega-wrapper").style.opacity = 1;
   document.getElementById("overlays").style.display = "none";
+  document.getElementById("no-scroll").style.overflowY = "scroll";
 }
 
+
 function fadeIn() {
-  document.getElementById("background-image-overlay").style.display = "block";
-  document.getElementById("background-image").style.display = "none";
-  document.getElementById("mega-wrapper").style.display = "none";
+
   document.getElementById("overlays").style.display = "block";
+
+  function down() {
+    var opacity = 100;
+    let intervalID; 
+
+    function move() {
+      if (opacity <= 0) {
+        clearInterval(intervalID);
+
+      } else {
+        opacity -= 5; 
+        document.getElementById("mega-wrapper").style.opacity = opacity/100;
+        document.getElementById("background-image").style.opacity = opacity/100;
+      }
+    }
+    intervalID = setInterval(move, 10);
+    move();
+  }
+
+  down();
+
+    function up() {
+    document.getElementById("background-image-overlay").style.display = "block"
+    console.log(document.getElementById("background-image-overlay").style.display);
+      var opacity = 0;
+      let intervalID; 
+
+      function move() {
+        if (opacity >= 100) {
+          clearInterval(intervalID);
+        } else {
+          opacity += 5; 
+          document.getElementById("background-image-overlay").style.opacity = opacity/400;
+          console.log(document.getElementById("background-image-overlay").style.opacity);
+        }
+      }
+      intervalID = setInterval(move, 10);
+      move();
+    }
+
+    up();
 }
 
 /* projects fades - in + out end */
