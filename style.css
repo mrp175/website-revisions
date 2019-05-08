@@ -156,18 +156,20 @@ main {
   bottom: 0;
   z-index: 10;
   position: fixed;
-  display: block;
+  display: none;
   overflow-y: hidden;
   opacity: 0;
+  align-items: center;
 }
 
-#overlays {
+#circuit-wrapper, #maxmsp-wrapper, #carousel-wrapper, #harmonic-wrapper, #tribute-wrapper {
   display: none;
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: none;
 }
 
 /*----------- containers end ---------*/
@@ -325,8 +327,6 @@ main {
     transition: 0.4s;
   }
 
-
-
   .projects-text {
     position: absolute;
     align-self: center;
@@ -365,9 +365,10 @@ main {
   .projects-button:hover .projects-text {
     opacity: 0;
   }
+
   .projects-button:hover {
     
-}
+  }
 
 /*-------------- PROJECTS END -----------*/
 
