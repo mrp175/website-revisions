@@ -61,14 +61,13 @@ main {
   #top-bar {
     background: rgb(150, 184, 87);
     background: rgb(92, 107, 192);
-    background: black;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 3;
     width: 100%;
     padding: 10px 0px;
-    opacity: 0.8;
     position: absolute;
     top: 0;
-    width: 100%;
+    height: 55px;
   }
 
   .text-outline {
@@ -89,16 +88,44 @@ main {
     box-shadow: 0px 0px 30px -5px;*/
     height: 55px;
     margin: 0px 10px;
-
   }
 
-  .nav-button{ 
+  #nav-bar-mobile {
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 100%;
+    /*background: rgba(56, 155, 236, 0.884); 
+    box-shadow: 0px 0px 30px -5px;*/
+    margin: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    opacity: 1;
+    top: 75px;
+    right: -100%;
+    font-size: 22px;
+    text-align: center;
+    transition: 0.4s ease;
+    display: none;
+  }
+
+  .nav-button { 
     height: 50px;
-    line-height: 50px;
+    line-height: 55px;
     text-align: center;
     color: white;
     flex-grow: 1;
     max-width: 100px;
+   }
+
+   .nav-button-mobile { 
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    color: white;
+    flex-grow: 1;
+    margin-right: 20px;
    }
 
    .nav-logo {
@@ -106,6 +133,16 @@ main {
     line-height: 50px;
     text-align: center;
     color: white;
+   }
+
+   #nav-logo-mobile {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    margin: auto 10px;
+    display: none;
    }
 
    .nav-empty {
@@ -126,8 +163,122 @@ main {
     outline: inherit;
    }
 
+   /* burger menu */
+
+    #menu-container {
+      display: none;
+      position: absolute;
+      right: 20px; 
+      top: 22px;
+      height: 30px; 
+      width: 35px;
+      box-sizing: border-box;
+      transform: scale(1.5);
+      z-index: 2;
+    }
+
+    #line-one, #line-two, #line-three {
+      width: 20px;
+      border: 1px solid white;
+      position: absolute;
+      transition: 0.4s ease;
+    }
+
+    #toggle {
+      display: none;
+    }
+
+    #line-one {
+      top: 0px;
+      left: 0px;
+    }
+
+    #line-two {
+      top: 0px;
+      left: 0px;
+    }
+
+    #line-three {
+      top: 0px;
+      left: 0px;
+    }
+
+    #toggle:checked ~ #menu-container > #wrapper-one > #line-one {
+      transform: rotate(135deg);
+    }
+
+    #toggle:checked ~ #menu-container > #wrapper-one {
+      transform: translateY(6px);
+    }
+
+    /* #toggle:checked ~ #container > #wrapper-two {
+      transform: translateX(-50px);
+    } */
+
+    #toggle:checked ~ #menu-container > #wrapper-two > #line-two {
+      opacity: 0;
+    }
+
+    #toggle:checked ~ #menu-container > #wrapper-three > #line-three {
+      transform: rotate(-135deg);
+    }
+
+    #toggle:checked ~ #menu-container > #wrapper-three {
+      transform: translateY(-6px);
+    }
+
+    #toggle:checked ~ #off-screen > #nav-bar-mobile {
+      transform: translateX(-100%);
+    }
+
+
+    #wrapper-one, #wrapper-two, #wrapper-three {
+      position: absolute;
+      height: 2px;
+      width: 24px;
+      box-sizing: border-box;
+      transition: 0.4s ease;
+    }
+
+    #wrapper-one {
+      top: 7px;
+      left: 5px;
+    }
+
+    #wrapper-two {
+      top: 13px;
+      left: 5px;
+    }
+
+    #wrapper-three {
+      top: 19px;
+      left: 5px;
+    }
+
+    #label {
+      display: none;
+      box-sizing: border-box;
+      height: 30px;
+      width: 35px;
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      cursor: pointer;
+      transform: scale(1.5);
+      z-index: 5;
+    }
+
+    #off-screen {
+      overflow: hidden;
+      width: 100%;
+    }
+
+   /* burger menu */
+
 
 /*---------------NAV BAR END-------------*/
+
+
 
 /*----------- containers start ---------*/
 
@@ -1051,8 +1202,29 @@ main {
 
   /*-------- MEDIA QUERIES START -------*/
 
-  @media only screen and (max-width: 750px) {
-  body {
+@media only screen and (max-width: 755px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #nav-bar-mobile {
+    display: flex;
+  }
+
+  #nav-button {
+    max-width: initial;
+  }
+
+  #label {
+    display: block;
+  }
+
+  #menu-container {
+    display: block;
+  }
+
+  #nav-logo-mobile {
+    display: block;
   }
 }
 
@@ -1060,6 +1232,12 @@ main {
   #carousel-image {
   height: 268px;
   padding-top: 0%;
+}
+
+@media(max-width: 420px)  {
+  #nav-logo-mobile {
+    text-align: left;
+  }
 }
 
 
