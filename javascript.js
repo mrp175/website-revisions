@@ -291,7 +291,7 @@ function circuitUp() {
         document.getElementById("background-image").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
   down();
@@ -314,7 +314,7 @@ function circuitUp() {
         document.getElementById("circuit-overlay").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
 
@@ -383,7 +383,7 @@ function maxmspUp() {
         document.getElementById("background-image").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
   down();
@@ -406,7 +406,7 @@ function maxmspUp() {
         document.getElementById("maxmsp-overlay").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
 
@@ -475,7 +475,7 @@ function carouselUp() {
         document.getElementById("background-image").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
   down();
@@ -498,7 +498,7 @@ function carouselUp() {
         document.getElementById("carousel-overlay").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
 
@@ -567,7 +567,7 @@ function tributeUp() {
         document.getElementById("background-image").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
   down();
@@ -590,7 +590,7 @@ function tributeUp() {
         document.getElementById("tribute-overlay").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
 
@@ -659,7 +659,7 @@ function harmonicUp() {
         document.getElementById("background-image").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
   down();
@@ -682,7 +682,7 @@ function harmonicUp() {
         document.getElementById("harmonic-overlay").style.opacity = opacity/100;
       }
     }
-    intervalID = setInterval(move, 10);
+    intervalID = setInterval(move, 15);
     move();
   }
 
@@ -768,12 +768,12 @@ function left() {
 
 
 function right() {
-    var time = setInterval(move, 8);
-  
-    if (document.getElementById("carousel-hidden").checked === true) {
-      document.getElementById("carousel-hidden").checked = false;
-      clearInterval(intervalID);
-    };
+  var time = setInterval(move, 8);
+
+  if (document.getElementById("carousel-hidden").checked === true) {
+    document.getElementById("carousel-hidden").checked = false;
+    clearInterval(intervalID);
+  };
   
   position -= 2;
   var images = document.getElementById("carousel-images");
@@ -787,9 +787,9 @@ function right() {
     } else {
       position -= 2;
       images.style.left = position + "%";
-       if (position == -600) {
-         position = -100;
-         images.style.left = -100;
+      if (position == -600) {
+        position = -100;
+        images.style.left = -100;
       }
     }
   }
@@ -809,9 +809,9 @@ function auto() {
     } else {
       position -= 2;
       images.style.left = position + "%";
-       if (position == -600) {
-         position = -100;
-         images.style.left = -100;
+      if (position == -600) {
+        position = -100;
+        images.style.left = -100;
       }
     }
   }
