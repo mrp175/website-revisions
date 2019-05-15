@@ -229,6 +229,7 @@ main {
 
     #toggle:checked ~ #off-screen > #nav-bar-mobile {
       transform: translateX(-100%);
+      opacity: 1;
     }
 
 
@@ -271,6 +272,9 @@ main {
     #off-screen {
       overflow: hidden;
       width: 100%;
+      height: 375px;
+      position: absolute;
+      top: 0;
     }
 
    /* burger menu */
@@ -828,8 +832,7 @@ main {
     background-color: rgb(240, 240, 240);
     background-color: white;
     background: rgb(64, 90, 102);
-    background: black;
-    opacity: 0.7;
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 75px;
     margin: 70px auto 0 auto;
@@ -885,6 +888,10 @@ main {
     color: white;
     text-decoration: none;
     font-weight: 100; 
+  }
+
+  #text-color-mobile {
+    display: none;
   }
   
   .shadow {
@@ -1237,6 +1244,50 @@ main {
 @media(max-width: 420px)  {
   #nav-logo-mobile {
     text-align: left;
+  }
+}
+
+@media(max-width: 375px) {
+  #text-color {
+    display: none;
+  }
+
+  #text-color-mobile {
+    display: block;
+  }
+}
+
+@media(max-width: 320px) {
+  .text-color {
+    font-size: 90%;
+  }
+}
+
+@media(max-width: 315px) {
+  .text-outline {
+    font-size: 22px;
+  }
+}
+
+@media(max-width: 290px) {
+  .text-color {
+      font-size: 80%;
+  }
+
+  .text-outline {
+      font-size: 19px;
+  }
+}
+
+@media(max-width: 260px) {
+  .text-outline {
+      font-size: 17px;
+  }
+}
+
+@media(max-width: 235px) {
+  .text-color {
+      font-size: 70%;
   }
 }
 
