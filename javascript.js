@@ -192,6 +192,12 @@ function home() {
   projectsFadeDown();
   musicFadeDown();
   contactFadeDown();
+  document.getElementById("home-button-mobile").disabled = true;
+  document.getElementById("about-button-mobile").disabled = false;
+  document.getElementById("goals-button-mobile").disabled = false;
+  document.getElementById("projects-button-mobile").disabled = false;
+  document.getElementById("music-button-mobile").disabled = false;
+  document.getElementById("contact-button-mobile").disabled = false;
 }
 
 function about() {
@@ -207,6 +213,12 @@ function about() {
   projectsFadeDown();
   musicFadeDown();
   contactFadeDown();
+  document.getElementById("home-button-mobile").disabled = false;
+  document.getElementById("about-button-mobile").disabled = true;
+  document.getElementById("goals-button-mobile").disabled = false;
+  document.getElementById("projects-button-mobile").disabled = false;
+  document.getElementById("music-button-mobile").disabled = false;
+  document.getElementById("contact-button-mobile").disabled = false;
 }
 
 function goals() {
@@ -222,6 +234,12 @@ function goals() {
   projectsFadeDown();
   musicFadeDown();
   contactFadeDown();
+  document.getElementById("home-button-mobile").disabled = false;
+  document.getElementById("about-button-mobile").disabled = false;
+  document.getElementById("goals-button-mobile").disabled = true;
+  document.getElementById("projects-button-mobile").disabled = false;
+  document.getElementById("music-button-mobile").disabled = false;
+  document.getElementById("contact-button-mobile").disabled = false;
 }
 
 function projects() {
@@ -237,6 +255,12 @@ function projects() {
   projectsFadeUp();
   musicFadeDown();
   contactFadeDown();
+  document.getElementById("home-button-mobile").disabled = false;
+  document.getElementById("about-button-mobile").disabled = false;
+  document.getElementById("goals-button-mobile").disabled = false;
+  document.getElementById("projects-button-mobile").disabled = true;
+  document.getElementById("music-button-mobile").disabled = false;
+  document.getElementById("contact-button-mobile").disabled = false;
 }
 
 function music() {
@@ -252,6 +276,12 @@ function music() {
   projectsFadeDown();
   musicFadeUp();
   contactFadeDown();
+  document.getElementById("home-button-mobile").disabled = false;
+  document.getElementById("about-button-mobile").disabled = false;
+  document.getElementById("goals-button-mobile").disabled = false;
+  document.getElementById("projects-button-mobile").disabled = false;
+  document.getElementById("music-button-mobile").disabled = true;
+  document.getElementById("contact-button-mobile").disabled = false;
 }
 
 function contact() {
@@ -267,6 +297,12 @@ function contact() {
   projectsFadeDown();
   musicFadeDown();
   contactFadeUp();
+  document.getElementById("home-button-mobile").disabled = false;
+  document.getElementById("about-button-mobile").disabled = false;
+  document.getElementById("goals-button-mobile").disabled = false;
+  document.getElementById("projects-button-mobile").disabled = false;
+  document.getElementById("music-button-mobile").disabled = false;
+  document.getElementById("contact-button-mobile").disabled = true;
 }
 
 /* NAV BUTTONS END */
