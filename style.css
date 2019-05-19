@@ -1220,11 +1220,15 @@ body {
     width: calc(100% - 40px);
   }
 
+  .card-large-main-overlay {
+    margin: 20px auto;
+    width: calc(100% - 40px);
+  }
+
   #contact-container {
     margin: 95px auto;
     width: calc(100% - 40px);
   }
-
 } 
 
 @media only screen and (max-width: 755px) {
@@ -1321,7 +1325,7 @@ body {
 
   #contact-overlay {
     align-items: center;
-    height: calc(100vh);
+    height: 100vh;
     min-height: 640px;
   }
 
