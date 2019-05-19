@@ -129,7 +129,7 @@ function musicFadeDown() {
 
 /*------- CONTACT START --------*/
 function contactFadeUp() {
-  document.getElementById("contact-overlay").style.display = "block";
+  document.getElementById("contact-overlay").style.display = "grid";
   var opacity = 0;
   let intervalID; 
 

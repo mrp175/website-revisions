@@ -1222,6 +1222,7 @@ body {
 
   #contact-container {
     margin: 95px auto;
+    width: calc(100% - 40px);
   }
 
 } 
@@ -1314,8 +1315,14 @@ body {
     height: 100%;
   }
 
-  #home-overlay, #about-overlay, #goals-overlay, #projects-overlay, #music-overlay, #contact-overlay {
+  #home-overlay, #about-overlay, #goals-overlay, #projects-overlay, #music-overlay {
     min-height: 100vh;
+  }
+
+  #contact-overlay {
+    align-items: center;
+    height: calc(100vh);
+    min-height: 640px;
   }
 
   #total-wrapper {
