@@ -1206,6 +1206,26 @@ body {
 
   /*-------- MEDIA QUERIES START -------*/
 
+@media only screen and (max-width: 1400px) {
+  .projects-keep-ratio-container {
+      margin: 95px auto;
+  } 
+
+  .projects-keep-ratio {
+      width: calc(100% - 40px);
+  } 
+
+  .card-large-main {
+    margin: 95px auto;
+    width: calc(100% - 40px);
+  }
+
+  #contact-container {
+    margin: 95px auto;
+  }
+
+} 
+
 @media only screen and (max-width: 755px) {
   #nav-bar {
     display: none;
@@ -1266,6 +1286,7 @@ body {
     margin: 75px auto;
     height: calc(100vh - 150px);
     min-height: 750px;
+    width: 100%;
   }
 
   .card-large-main-overlay {
