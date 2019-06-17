@@ -1383,8 +1383,6 @@ body {
     padding-top: 0%;
   }
 
-  
-
   .card-large-main-overlay {
     /* width: calc(100% - 10px);
     margin: 5px; */ 
@@ -1436,6 +1434,16 @@ body {
   .iframe-wrapper {
     margin: 15px 25px;
   }
+
+  #projects-grid {
+    grid-gap: 0;
+    margin-top: 75px;
+    margin-top: 75px;
+  }
+
+  .cell {
+    width: 100vw;
+  }
 }
 
 @media(max-width: 420px)  {
@@ -1468,15 +1476,7 @@ body {
 }
 
 @media(max-width: 350px) {
-  #projects-grid {
-    grid-gap: 0;
-    margin-top: 75px;
-    margin-top: 75px;
-  }
-
-  .cell {
-    width: 100vw;
-  }
+  
 }
 
 
