@@ -198,6 +198,13 @@ function home() {
   document.getElementById("projects-button-mobile").disabled = false;
   document.getElementById("music-button-mobile").disabled = false;
   document.getElementById("contact-button-mobile").disabled = false;
+ 
+  document.getElementById("home-btn").classList.add("active");
+  document.getElementById("about-btn").classList.remove("active");
+  document.getElementById("goals-btn").classList.remove("active");
+  document.getElementById("projects-btn").classList.remove("active");
+  document.getElementById("music-btn").classList.remove("active");
+  document.getElementById("contact-btn").classList.remove("active");
 }
 
 function about() {
@@ -219,6 +226,13 @@ function about() {
   document.getElementById("projects-button-mobile").disabled = false;
   document.getElementById("music-button-mobile").disabled = false;
   document.getElementById("contact-button-mobile").disabled = false;
+  
+  document.getElementById("home-btn").classList.remove("active");
+  document.getElementById("about-btn").classList.add("active");
+  document.getElementById("goals-btn").classList.remove("active");
+  document.getElementById("projects-btn").classList.remove("active");
+  document.getElementById("music-btn").classList.remove("active");
+  document.getElementById("contact-btn").classList.remove("active");
 }
 
 function goals() {
@@ -240,6 +254,13 @@ function goals() {
   document.getElementById("projects-button-mobile").disabled = false;
   document.getElementById("music-button-mobile").disabled = false;
   document.getElementById("contact-button-mobile").disabled = false;
+  
+  document.getElementById("home-btn").classList.remove("active");
+  document.getElementById("about-btn").classList.remove("active");
+  document.getElementById("goals-btn").classList.add("active");
+  document.getElementById("projects-btn").classList.remove("active");
+  document.getElementById("music-btn").classList.remove("active");
+  document.getElementById("contact-btn").classList.remove("active");
 }
 
 function projects() {
@@ -261,6 +282,13 @@ function projects() {
   document.getElementById("projects-button-mobile").disabled = true;
   document.getElementById("music-button-mobile").disabled = false;
   document.getElementById("contact-button-mobile").disabled = false;
+
+  document.getElementById("home-btn").classList.remove("active");
+  document.getElementById("about-btn").classList.remove("active");
+  document.getElementById("goals-btn").classList.remove("active");
+  document.getElementById("projects-btn").classList.add("active");
+  document.getElementById("music-btn").classList.remove("active");
+  document.getElementById("contact-btn").classList.remove("active");
 }
 
 function music() {
@@ -282,6 +310,13 @@ function music() {
   document.getElementById("projects-button-mobile").disabled = false;
   document.getElementById("music-button-mobile").disabled = true;
   document.getElementById("contact-button-mobile").disabled = false;
+
+  document.getElementById("home-btn").classList.remove("active");
+  document.getElementById("about-btn").classList.remove("active");
+  document.getElementById("goals-btn").classList.remove("active");
+  document.getElementById("projects-btn").classList.remove("active");
+  document.getElementById("music-btn").classList.add("active");
+  document.getElementById("contact-btn").classList.remove("active");
 }
 
 function contact() {
@@ -303,6 +338,13 @@ function contact() {
   document.getElementById("projects-button-mobile").disabled = false;
   document.getElementById("music-button-mobile").disabled = false;
   document.getElementById("contact-button-mobile").disabled = true;
+
+  document.getElementById("home-btn").classList.remove("active");
+  document.getElementById("about-btn").classList.remove("active");
+  document.getElementById("goals-btn").classList.remove("active");
+  document.getElementById("projects-btn").classList.remove("active");
+  document.getElementById("music-btn").classList.remove("active");
+  document.getElementById("contact-btn").classList.add("active");
 }
 
 /* NAV BUTTONS END */

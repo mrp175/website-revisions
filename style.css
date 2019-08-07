@@ -106,15 +106,75 @@ body {
     display: none;
     pointer-events: auto;
   }
-
-  .nav-button { 
-    height: 50px;
+    
+    .nav-button { 
+    height: 55px;
     line-height: 55px;
     text-align: center;
     color: white;
     flex-grow: 1;
     max-width: 100px;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-sizing: border-box;
+   } 
+
+   .nav-button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0;
+    /*font-weight: bold;*/
+   } 
+
+   .active {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0;
    }
+
+  /* #home-btn, #about-btn, #goals-btn, {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    max-width: 100px;
+    transition: 0.2s;
+    border-radius: 5px;
+    box-sizing: border-box;
+   } */
+
+   /*#home-btn:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0;
+    /*font-weight: bold;*/
+   } 
+
+   /*#home-but, #about-but, #goals-but, #projects-but, #music-but, #contact-but { 
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    max-width: 100px;
+    transition: 0.2s;
+    border-radius: 5px;
+   }
+
+    #home-button:hover, #about-button:hover, #goals-button:hover, #projects-button:hover, #music-button:hover, #contact-button:hover {
+      background: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    border-radius: 0;
+    } */
+
+   /* .nav-button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 0;
+    /*font-weight: bold;*/
+   } */
 
    .nav-button-mobile { 
     height: 50px;
@@ -159,6 +219,14 @@ body {
     cursor: pointer;
     outline: inherit;
    }
+
+   /*#home-button {
+    padding: 0px 10px;
+    color: black;
+    background: white;
+    height: 75px;
+    margin-top: -10px;
+   } */
 
    /* burger menu */
 
@@ -541,6 +609,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     pointer-events: auto;
+    opacity: 0.9;
   }
 
 /*-------------- PROJECTS END -----------*/
