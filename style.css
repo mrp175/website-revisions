@@ -1,6 +1,6 @@
 
 html {
-
+ 
 }
 
 body {
@@ -13,6 +13,7 @@ body {
     position: relative;
     background: black;
     overflow-x: hidden;
+
 }
   
   h1 {
@@ -132,50 +133,6 @@ body {
     border-radius: 0;
    }
 
-  /* #home-btn, #about-btn, #goals-btn, {
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    color: white;
-    flex-grow: 1;
-    max-width: 100px;
-    transition: 0.2s;
-    border-radius: 5px;
-    box-sizing: border-box;
-   } */
-
-   /*#home-btn:hover {
-    background: rgb(255, 255, 255);
-    color: black;
-    border-radius: 0;
-    /*font-weight: bold;*/
-   } 
-
-   /*#home-but, #about-but, #goals-but, #projects-but, #music-but, #contact-but { 
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    color: white;
-    flex-grow: 1;
-    max-width: 100px;
-    transition: 0.2s;
-    border-radius: 5px;
-   }
-
-    #home-button:hover, #about-button:hover, #goals-button:hover, #projects-button:hover, #music-button:hover, #contact-button:hover {
-      background: rgb(255, 255, 255);
-    color: black;
-    font-weight: bold;
-    border-radius: 0;
-    } */
-
-   /* .nav-button:hover {
-    background: rgb(255, 255, 255);
-    color: black;
-    border-radius: 0;
-    /*font-weight: bold;*/
-   } */
-
    .nav-button-mobile { 
     height: 50px;
     line-height: 50px;
@@ -244,7 +201,7 @@ body {
 
     #line-one, #line-two, #line-three {
       width: 20px;
-      border: 1px solid white;
+      border-top: 2px solid white;
       position: absolute;
       transition: 0.4s ease;
     }
