@@ -1276,6 +1276,15 @@ body {
 }
 
 .cell:hover .hover {
+  /* rgb(70, 70, 70); */
+  bottom: -60px;
+}
+
+.cell:hover .hover-2 {
+  bottom: -50px;
+}
+
+.cell:hover .gradient {
   opacity: 0;
 }
 
@@ -1291,17 +1300,39 @@ body {
   width: 350px; 
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   padding: 0;
   font-size: 2em;
   line-height: 50px;
-  transition: 0.4s ease;
+  transition: 0.5s;
+  z-index: 999;
   color: white;
-  background: grey;
+  filter: sepia(100%);
 }
 
+.hover-2 {
+  height: 50px;
+  width: 350px; 
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  padding: 0;
+  font-size: 2em;
+  transition: 0.3s;
+  background: white;
+  z-index: 2;
+}
 
-
+.gradient {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  transition: 0.4s;
+}
 
   /*--------NEW PROJECTS SECTION -------*/
 
